@@ -1,5 +1,11 @@
 #!/bin/bash
 
+input="Error while fetching input param"
+
 if read -t 0; then
-    cat
+    read input
 fi
+
+echo $input
+
+# Regex ###\s<directory_path>\s###(.*?)(?:###\s.*###|\z)
